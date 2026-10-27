@@ -27,15 +27,17 @@ def accueil():
 @app.get("/presentation")
 def presentation():
     return """
-    <h1>Léa Martin</h1>
-    <p>Je suis étudiante en <strong>première année</strong> d'informatique.</p>
+    <h1>Awa Diawara</h1>
+    <p>Je suis étudiante en deuxième année de réseau et informatique.</p>
+
     <h2>Ce que j'aime</h2>
     <ul>
-        <li>Les jeux vidéo</li>
-        <li>La musique</li>
-        <li>Le code (bientôt !)</li>
+        <li>Les réseaux informatiques</li>
+        <li>L'administration système</li>
+        <li>Découvrir de nouvelles technologies</li>
     </ul>
     """
+    
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
 # ---------------------------------------------------------------
