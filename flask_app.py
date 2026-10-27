@@ -31,9 +31,9 @@ def presentation():
 
     <p>Je suis étudiante en deuxième année de réseau et informatique.</p>
 
-    <img src="https://placehold.co/300x200"
-         alt="Image de présentation"
-         width="300">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+     alt="Matériel informatique"
+     width="300">
 
     <h2>Ce que j'aime</h2>
 
