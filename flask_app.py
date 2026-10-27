@@ -28,16 +28,21 @@ def accueil():
 def presentation():
     return """
     <h1>Awa Diawara</h1>
+
     <p>Je suis étudiante en deuxième année de réseau et informatique.</p>
 
+    <img src="https://placehold.co/300x200"
+         alt="Image de présentation"
+         width="300">
+
     <h2>Ce que j'aime</h2>
+
     <ul>
         <li>Les réseaux informatiques</li>
         <li>L'administration système</li>
         <li>Découvrir de nouvelles technologies</li>
     </ul>
     """
-    
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
 # ---------------------------------------------------------------
