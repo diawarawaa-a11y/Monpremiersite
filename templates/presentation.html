@@ -1,24 +1,21 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Présentation d'Awa</title>
-</head>
-<body>
-    <h1>{{ prenom }} {{ nom }}</h1>
+from flask import Flask, render_template
 
-    <p>Je suis étudiante en deuxième année de réseau et informatique.</p>
+app = Flask(__name__)
 
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
-         alt="Matériel informatique"
-         width="300">
 
-    <h2>Ce que j'aime</h2>
+@app.get("/")
+def accueil():
+    return "Bienvenue sur le site de Awa 🚀 !"
 
-    <ul>
-        <li>Les réseaux informatiques</li>
-        <li>L'administration système</li>
-        <li>Découvrir de nouvelles technologies</li>
-    </ul>
-</body>
-</html>
+
+@app.get("/presentation")
+def presentation():
+    return render_template(
+        "presentation.html",
+        prenom="Awa",
+        nom="Diawara"
+    )
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
